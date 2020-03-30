@@ -249,6 +249,6 @@ li {
 	line-height: normal;
 	color: #000000;
 	font-weight: bold;
-	margin-left: -.5rem;
+	margin-left: -1rem;
 }
 
