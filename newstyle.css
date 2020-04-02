@@ -245,10 +245,11 @@ li {
 
 
 .pubyear {
+	font-size: medium;
 	font-style: normal;
 	line-height: normal;
-	color: #000000;
+	color: #00F;
 	font-weight: bold;
-	margin-left: -.5rem;
+	margin-left: -2rem;
 }
 
