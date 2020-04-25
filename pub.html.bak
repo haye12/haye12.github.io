@@ -8,13 +8,6 @@
 <link href='http://fonts.googleapis.com/css?family=Inconsolata|Kranky|Open+Sans:400,700&v2' rel="stylesheet">
 <link href="newstyle.css" rel="stylesheet">
 
-
-<style>
-li {
-	padding-left: 0;
-	margin-bottom:5px;
-}	
-</style>
 </head>
 
 <body>
@@ -31,8 +24,6 @@ li {
 <ol>
 <span class="pubyear"><strong>2020</strong></span>
 
-<li >Gonglong Chen, Jiamei Lv, and <strong>Wei Dong*</strong>, &quot;Exploiting Rateless Codes and Cross-Layer Optimization for Low-Power Wide-Area Networks&quot;, accepted to <strong>IEEE IWQoS 2020</strong>.</li>
-<li >Jiamei Lv, Yuxuan Zhang, Yi Gao, <strong>Wei Dong</strong>, and Chun Chen, &quot;A General Approach to Robust QR codes Decoding&quot;, accepted to <strong>IEEE IWQoS 2020</strong>. </li>
 <li >Borui Li, and <strong>Wei Dong*</strong>, &quot;EdgeProg: Edge-centric Programming for IoT Applications&quot;, accepted to <strong>IEEE ICDCS 2020</strong>, Singapore, July 8-10, 2020. </li>
 <li >Yi Gao, Jiadong Zhang, Gaoyang Guan, and <strong>Wei Dong*</strong>, &quot;LinkLab: A Scalable and Heterogeneous Testbed for Remotely Developing and Experimenting IoT Applications&quot;, <strong> ACM/IEEE IoTDI 2020</strong>, Sydney, Austria, April 21-24, 2020. </li>
 <li >Yuxiang Lin, <strong>Wei Dong*</strong>, Yi Gao, and Tao Gu, &quot;SateLoc: a Virtual Fingerprinting Approach to Outdoor LoRa Localization using Satelite Images&quot;,  <strong>ACM/IEEE IPSN 2020</strong>, Sydney, Austria, April 21-24, 2020. </li>
