@@ -1,0 +1,4 @@
+ftp -n -s:ftpcmd.txt
+open 192.168.1.202
+user pi  haye3915067
+cd www/dongw
