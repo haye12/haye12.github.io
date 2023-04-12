@@ -119,7 +119,10 @@
   <li ><b><a href="http://www.emnets.org/iotbook/">《从创意到原型：物联网应用快速开发》</a></b>, 科学出版社. (<a href="https://item.jd.com/12638682.html">京东链接</a>、<a href="http://product.dangdang.com/27891507.html">当当链接</a>)</li>
   <li><span class="bf"><a href="https://dl.ccf.org.cn/article/articleDetail.html?type=xhtx_thesis&_ack=1&id=6002180057073664"><strong>《物联网软件低代码开发》</strong></a>，中国计算机学会通讯</span> (CCCF), 2022年6月. </li>
   <li>[2023.04] One paper is accepted to <a href="https://icdcs2023.icdcs.org/"><strong>IEEE ICDCS 2023</strong></a>. </li>
-  <li>[2022.07] Our LinkLab paper is accepted to <a href="https://www.usenix.org/conference/nsdi23"><strong>USENIX NSDI 2023</strong></a>. </li>
+  <li>[2022.12] One paper is accepted to <strong><a href="https://infocom2023.ieee-infocom.org/">IEEE INFOCOM 2023</a></strong>. </li>
+  <li>[2022.08] One paper is accepted to <em>ACM Transactions on Internet Technology</em>. </li>
+  <li>[2022.07] Our paper &quot;TCP over BLE&quot; is accepted to <strong><a href="https://icnp22.cs.ucr.edu/">IEEE ICNP 2022</a></strong>. </li>
+  <li>[2022.07] Our &quot;LinkLab&quot; paper is accepted to <a href="https://www.usenix.org/conference/nsdi23"><strong>USENIX NSDI 2023</strong></a>. </li>
   <li>[2022.06] Our paper on LPWAN is accepted to <em>ACM Transactions on Sensor Networks</em>. </li>
   <li>[2022.05] Our paper on network measurement is accepted to <em>IEEE/ACM Transactions on Networking</em>. </li>
   <li>[2022.05] Our paper on &quot;rogue AP detection&quot; is accepted to <em>ACM Transactions on Sensor Networks</em>.</li>
@@ -168,7 +171,7 @@ compiling. By using a distributed architecture, LinkLab is a scalable, multisite
 and multi-user IoT testbed, with fine-grained access control
 and a flexible naming mechanism. Currently, LinkLab is implemented
 with more than 150 IoT devices.
-      The system has been published in <em>ACM/IEEE IoTDI 2020</em>. </td>
+      The system has been published in <em>ACM/IEEE IoTDI 2020</em> and will be reported at <em>USENIX NSDI 2023</em>. </td>
     </tr>
     
     <tr>
@@ -236,6 +239,28 @@ with more than 150 IoT devices.
   
 
   <ul>
+  
+  <li><em>[NSDI'23]</em> LinkLab 2.0: a Multi-tenant Programmable IoT Testbed for Experimentation with Edge-Cloud Integration
+    	
+      <article id="node-246493" class="node node-paper view-mode-schedule"><div class="required-fields group-text-wrapper field-group-html-element"><div class="flexwrapper"><div class="paperdetail">
+    <!-- the following two divs are necessary -->
+    <div class="required-fields group-schedule-accordion field-group-html-element">
+    <div class="field field-name-field-paper-description-long field-type-text-long field-label-hidden">
+    	      	
+    	  	    <p>In this paper, we present EmLab, a completely programmable    	  	      and controllable IoT testbed with the support of    	  	      edge devices and cloud infrastructures. To be more specific,    	  	      EmLab leverages a tiered architecture for the programmable devices and the management system to achieve scalability. To    	  	      better support the integrated experiment among IoT, edge and    	  	      cloud, EmLab provides several one-site programming supports    	  	      and leverages the customizable offloading with serverless    	  	      functions. Moreover, EmLab proposes a device-involved    	  	      multi-tenancy approach to ensure responsiveness for concurrent    	  	      requests. Furthermore, targeting 24/7 availability for experimenters,    	  	      EmLab leverages proactive and reactive problem    	  	      detection to improve the reliability of the testbed. Finally, we    	  	      describe the supported research experiments and the outreach    	  	      usage by external users. We also report lessons earned from    	  	      the four-year operation of EmLab. EmLab is now publicly    	  	      accessible1 from December 2018 and has supported experiments    	  	      from 2,100+ users. The accumulated usage time across    	  	      all the devices exceeds 17,300 hours.</p>
+            
+            
+    </div></div></div> <!-- paperdetail -->
+        
+    <div class="paperdetail">
+      <img src="newimg/newpdf.png" width="16" height="16" /> <a href="xx.pdf"></a> &nbsp;
+     	<img src="newimg/slides.png" width="16" height="16" /> <a href="xx.pdf"></a> 
+    </div>            	         
+
+    </div> <!-- end flexwrapper -->
+  </div></article>
+    </li>
+    
       <li><em>[MobiSys'22]</em> TinyNet: a Lightweight, Modular, and Unified Network 
   Architecture for the Internet of Things
     	
@@ -279,7 +304,7 @@ composition; (3) has small code size and memory footprint.</p>
     <div class="required-fields group-schedule-accordion field-group-html-element">
     <div class="field field-name-field-paper-description-long field-type-text-long field-label-hidden">
     	      	
-    	  	    <p>Recent   years   have   witnessed   the   progressive   in-tegration   between   IoT   (Internet   of   Things)   devices   and   the cloud  server,  which  promotes  the  efficiency  and  interoperabilityof  IoT  applications.  WebAssembly,  known  for  its  performance and  portability,  is  considered  a  promising  technology  to  bridgethe  heterogeneity  between  devices  and  the  server.  Nevertheless,the resource-constrained devices, which are commonly deployedin   the   wild,   are   difficult   to   participate   in   this   device-cloudintegration because it could hardly run WebAssembly efficiently. Hence,  we  propose  WAIT,  a lightweight WebAssembly  runtimeon  resource-constrained  IoT  devices  for  device-cloud  integratedapplications. WAIT is the first work to enable the Ahead-of-Time(AOT) compilation of WebAssembly on resource-constrained devices by leveraging several approaches to reduce memory usage.Moreover,  WAIT  introduces  various  safety  checks  at  compile-time  to  guarantee  the  sandbox  execution  of  WebAssembly  and optimizes energy consumption for IoT devices. Results show that WAIT achieves 84.8×lower RAM usage compared with the state-of-the-art  WebAssembly  AOT  runtime,  and  reduces  1.2×~4.9×energy consumption while guaranteeing the sandboxed execution of  WebAssembly  modules.</p>
+    	  	    <p>Recent   years   have   witnessed   the   progressive   in-tegration   between   IoT   (Internet   of   Things)   devices   and   the cloud  server,  which  promotes  the  efficiency  and  interoperabilityof  IoT  applications.  WebAssembly,  known  for  its  performance and  portability,  is  considered  a  promising  technology  to  bridge the  heterogeneity  between  devices  and  the  server.  Nevertheless,the resource-constrained devices, which are commonly deployedin   the   wild,   are   difficult   to   participate   in   this   device-cloud integration because it could hardly run WebAssembly efficiently. Hence,  we  propose  WAIT,  a lightweight WebAssembly  runtimeon  resource-constrained  IoT  devices  for  device-cloud  integrated applications. WAIT is the first work to enable the Ahead-of-Time (AOT) compilation of WebAssembly on resource-constrained devices by leveraging several approaches to reduce memory usage. Moreover,  WAIT  introduces  various  safety  checks  at  compile-time  to  guarantee  the  sandbox  execution  of  WebAssembly  and optimizes energy consumption for IoT devices. Results show that WAIT achieves 84.8×lower RAM usage compared with the state-of-the-art  WebAssembly  AOT  runtime,  and  reduces  1.2×~4.9×energy consumption while guaranteeing the sandboxed execution of  WebAssembly  modules.</p>
             
             
     </div></div></div> <!-- paperdetail -->
@@ -479,7 +504,7 @@ respectively, compared with the best state-of-the-art algorithms.</p>
     	
      
       
-    	  	<p>Rapid development is essential for IoT (Internet of Things)application developers to obtain first-mover advantages and reducethe development cost. In this paper, we present TinyLink, a holisticsystem for rapid development of IoT applications. The key ideaof TinyLink is to use atop-downapproach for designing boththe hardware and the software of IoT applications. Developerswrite the application code in a C-like language to specify thekey logic of their applications, without dealing with the detailsof the specific hardware components. Taking the applicationcode as input, TinyLink automatically generates the hardwareconfiguration as well as the binary program executable on thetarget hardware platform. TinyLink provides unified APIs forapplications to interact with the underlying hardware components.We implement TinyLink and evaluate its performance using real-world IoT applications. Results show that: (1) TinyLink achievesrapid development of IoT applications, reducing 52.58% of linesof code in average compared with traditional approaches; (2)TinyLink searches a much larger design space and thus can generatea superior solution for the hardware configuration, comparedwith the state-of-the-art approach; (3) TinyLink incurs acceptableoverhead in terms of execution time and program memory.</p>
+    	  	<p>Rapid development is essential for IoT (Internet of Things) application developers to obtain first-mover advantages and reducethe development cost. In this paper, we present TinyLink, a holisticsystem for rapid development of IoT applications. The key ideaof TinyLink is to use atop-down approach for designing boththe hardware and the software of IoT applications. Developers write the application code in a C-like language to specify the key logic of their applications, without dealing with the details of the specific hardware components. Taking the application code as input, TinyLink automatically generates the hardware configuration as well as the binary program executable on the target hardware platform. TinyLink provides unified APIs forapplications to interact with the underlying hardware components.We implement TinyLink and evaluate its performance using real-world IoT applications. Results show that: (1) TinyLink achieves rapid development of IoT applications, reducing 52.58% of lines of code in average compared with traditional approaches; (2) TinyLink searches a much larger design space and thus can generate a superior solution for the hardware configuration, compared with the state-of-the-art approach; (3) TinyLink incurs acceptable overhead in terms of execution time and program memory.</p>
     </div></div></div> <!-- paperdetail -->
         
     <div class="paperdetail"> <a href="pub/MobiCom17-TinyLink.pdf"><img src="newimg/newpdf.png" width="16" height="16" /></a> <a href="xx.pdf"></a> 
@@ -503,7 +528,7 @@ respectively, compared with the best state-of-the-art algorithms.</p>
     <!-- the following two divs are necessary -->
     <div class="required-fields group-schedule-accordion field-group-html-element">
     <div class="field field-name-field-paper-description-long field-type-text-long field-label-hidden">
-    	  	<p>The ZigBee communication can be easily and severely interfered by Wi-Fi traffic. Error recovery, as an important means forZigBee to survive Wi-Fi interference, has been extensively studied in recent years. The existing works add upfront redundancy toin-packet blocks for recovering a certain number of random corruptions. Therefore the bursty nature of ZigBee in-packet corruptionsunder Wi-Fi interference is often considered harmful, since some blocks are full of errors which cannot be recovered and some blockshave no errors but still requiring redundancy. As a result, they often use interleaving to reshape the bursty errors, before applyingcomplex FEC codes to recover the re-shaped random distributed errors. In this paper, we take a different view that burstiness may behelpful. With burstiness, the in-packet corruptions are often consecutive and the requirement for error recovery is reduced as"recovering any k consecutive errors" instead of "recovering any random k errors". This lowered requirement allows us to design farmore efficient code than the existing FEC codes. Motivated by this implication, we exploit the corruption burstiness to design a simpleyet effective error recovery code using XOR operations (called ZiXOR). ZiXOR uses XOR code and the delay is significantly reduced.More, ZiXOR uses RSSI-hinted approach to detect in packet corruptions without CRC, incurring almost no extra transmissionoverhead. The testbed evaluation results show that ZiXOR outperforms the state-of-the-art works in terms of the throughput (by 47%) and latency (by 22%).</p>
+    	  	<p>The ZigBee communication can be easily and severely interfered by Wi-Fi traffic. Error recovery, as an important means forZigBee to survive Wi-Fi interference, has been extensively studied in recent years. The existing works add upfront redundancy to in-packet blocks for recovering a certain number of random corruptions. Therefore the bursty nature of ZigBee in-packet corruptions under Wi-Fi interference is often considered harmful, since some blocks are full of errors which cannot be recovered and some blocks have no errors but still requiring redundancy. As a result, they often use interleaving to reshape the bursty errors, before applying complex FEC codes to recover the re-shaped random distributed errors. In this paper, we take a different view that burstiness may be helpful. With burstiness, the in-packet corruptions are often consecutive and the requirement for error recovery is reduced as "recovering any k consecutive errors" instead of "recovering any random k errors". This lowered requirement allows us to design far more efficient code than the existing FEC codes. Motivated by this implication, we exploit the corruption burstiness to design a simple yet effective error recovery code using XOR operations (called ZiXOR). ZiXOR uses XOR code and the delay is significantly reduced. More, ZiXOR uses RSSI-hinted approach to detect in packet corruptions without CRC, incurring almost no extra transmission overhead. The testbed evaluation results show that ZiXOR outperforms the state-of-the-art works in terms of the throughput (by 47%) and latency (by 22%).</p>
     </div></div></div> <!-- paperdetail -->
         
     <div class="paperdetail"> <a href="pub/TMC-ZiXOR.pdf"><img src="newimg/newpdf.png" width="16" height="16" /></a> <a href="xx.pdf"></a> 
@@ -519,7 +544,7 @@ respectively, compared with the best state-of-the-art algorithms.</p>
     <!-- the following two divs are necessary -->
     <div class="required-fields group-schedule-accordion field-group-html-element">
     <div class="field field-name-field-paper-description-long field-type-text-long field-label-hidden">
-    	  	<p>Air  quality  monitoring  has  attracted  a  lot  of attention from governments, academia and industry, especially for PM2.5 due to its significant impact on our respiratory systems. In this paper, we present the design, implementation,and evaluation of Mosaic, a low cost urban PM2.5 monitoring system based on mobile sensing. In Mosaic, a small number of air quality monitoring nodes are deployed on city buses to measure air quality. Current low-cost particle sensors based on light-scattering, however, are vulnerable to airflow disturbance on moving vehicles. In order to address this problem, we build our air quality monitoring nodes, Mosaic-Nodes, with a novel constructive airflow-disturbance design based on a carefully tuned airflow structure and a GPS-assisted filtering method. Further, the buses used for system deployment are selected by a novel algorithm which achieves both high coverage and low computation overhead. The collected sensor data is also used to calculate the PM2.5 of locations without direct measurements by an existing inference model. We apply the Mosaic system in a testing urban area which includes more than 70 point-of-interests. Results show that the Mosaic system can accurately obtain the urban air quality with high coverage and low cost.</p>
+    	  	<p>Air  quality  monitoring  has  attracted  a  lot  of attention from governments, academia and industry, especially for PM2.5 due to its significant impact on our respiratory systems. In this paper, we present the design, implementation, and evaluation of Mosaic, a low cost urban PM2.5 monitoring system based on mobile sensing. In Mosaic, a small number of air quality monitoring nodes are deployed on city buses to measure air quality. Current low-cost particle sensors based on light-scattering, however, are vulnerable to airflow disturbance on moving vehicles. In order to address this problem, we build our air quality monitoring nodes, Mosaic-Nodes, with a novel constructive airflow-disturbance design based on a carefully tuned airflow structure and a GPS-assisted filtering method. Further, the buses used for system deployment are selected by a novel algorithm which achieves both high coverage and low computation overhead. The collected sensor data is also used to calculate the PM2.5 of locations without direct measurements by an existing inference model. We apply the Mosaic system in a testing urban area which includes more than 70 point-of-interests. Results show that the Mosaic system can accurately obtain the urban air quality with high coverage and low cost.</p>
     </div></div></div> <!-- paperdetail -->
         
     <div class="paperdetail"> <a href="pub/INFOCOM16-Mosaic.pdf"><img src="newimg/newpdf.png" width="16" height="16" /></a> <a href="xx.pdf"></a> &nbsp;
@@ -557,7 +582,7 @@ respectively, compared with the best state-of-the-art algorithms.</p>
     <!-- the following two divs are necessary -->
     <div class="required-fields group-schedule-accordion field-group-html-element">
     <div class="field field-name-field-paper-description-long field-type-text-long field-label-hidden">
-    	  	<p>Understanding the packet delivery performance of awireless sensor network (WSN) iscritical for improving systemperformance and exploring future developments and applicationsof WSN techniques. In spite of many empirical measurements inthe literature, we still lack in-depth understanding on how and towhat extent different factors contribute to the overall packet lossesfor a complete stack of protocols at large scale. Specifically, very little is known about: 1) when, where, and under what kind of cir-cumstances packet losses occur; 2) why packets are lost. As a steptoward addressing those issues, we deploy a large-scale WSN anddesign a measurement system for retrieving important system met-rics. We propose MAP, a step-by-step methodology to identify thelosses, extract system events, and perform spatial-temporal corre-lation analysis by employing a carefully examined causal graph.MAP enables us to get a closer look at the root causes of packetlosses in a low-power ad hoc network. This study validates someearlier conjectures on WSNs and reveals some newfindings. Thequantitative results also shed lights for future large-scale WSN deployments.</p>
+    	  	<p>Understanding the packet delivery performance of a wireless sensor network (WSN) iscritical for improving system performance and exploring future developments and applicationsof WSN techniques. In spite of many empirical measurements inthe literature, we still lack in-depth understanding on how and to what extent different factors contribute to the overall packet losses for a complete stack of protocols at large scale. Specifically, very little is known about: 1) when, where, and under what kind of circumstances packet losses occur; 2) why packets are lost. As a step toward addressing those issues, we deploy a large-scale WSN and design a measurement system for retrieving important system metrics. We propose MAP, a step-by-step methodology to identify the losses, extract system events, and perform spatial-temporal correlation analysis by employing a carefully examined causal graph.MAP enables us to get a closer look at the root causes of packetlosses in a low-power ad hoc network. This study validates some earlier conjectures on WSNs and reveals some newfindings. The quantitative results also shed lights for future large-scale WSN deployments.</p>
     
     </div></div></div> <!-- paperdetail -->
         
@@ -575,7 +600,7 @@ respectively, compared with the best state-of-the-art algorithms.</p>
     <!-- the following two divs are necessary -->
     <div class="required-fields group-schedule-accordion field-group-html-element">
     <div class="field field-name-field-paper-description-long field-type-text-long field-label-hidden">
-    	  	<p>Recent advances in Microelectronic Mechanical Systems (MEMS) and wireless communication technologieshave fostered the rapid development of networked embedded systems like wireless sensor networks. Systemsoftware for these self-organizing systems often needs to be updated for a variety of reasons. We present aholistic software update (i.e., reprogramming) system called R3 for networked embedded systems. R3 hastwo salient features. First, the binary differencing algorithm within R3 (R3diff) ensures an optimal resultin terms of the delta size under a configurable cost measure. Second, the similarity preserving methodwithin R3 (R3sim) optimizes the binary code format for achieving a large similarity with a small metadataoverhead. Overall, R3 achieves the smallest delta size compared with other software update approaches suchas Stream, Rsync, RMTD, Zephyr, Hermes, and R2 (e.g., 50%–99% reduction compared to Stream and about20%–40% reduction compared to R2). R3's implementation on TelosB/TinyOS is lightweight and efficient.</p>
+    	  	<p>Recent advances in Microelectronic Mechanical Systems (MEMS) and wireless communication technologies have fostered the rapid development of networked embedded systems like wireless sensor networks. System software for these self-organizing systems often needs to be updated for a variety of reasons. We present a holistic software update (i.e., reprogramming) system called R3 for networked embedded systems. R3 has two salient features. First, the binary differencing algorithm within R3 (R3diff) ensures an optimal result in terms of the delta size under a configurable cost measure. Second, the similarity preserving method within R3 (R3sim) optimizes the binary code format for achieving a large similarity with a small meta data overhead. Overall, R3 achieves the smallest delta size compared with other software update approaches such as Stream, Rsync, RMTD, Zephyr, Hermes, and R2 (e.g., 50%–99% reduction compared to Stream and about 20%–40% reduction compared to R2). R3's implementation on TelosB/TinyOS is lightweight and efficient.</p>
     </div></div></div> <!-- paperdetail -->
         
     <div class="paperdetail"> <a href="pub/TOSN-r3.pdf"><img src="newimg/newpdf.png" width="16" height="16" /></a> <a href="xx.pdf"></a> &nbsp;
@@ -592,7 +617,7 @@ respectively, compared with the best state-of-the-art algorithms.</p>
     <!-- the following two divs are necessary -->
     <div class="required-fields group-schedule-accordion field-group-html-element">
     <div class="field field-name-field-paper-description-long field-type-text-long field-label-hidden">
-    	  	<p>The development of a modern sensor network is difficult because of the long-term unattended operation mode, diverseapplication requirements, and stringent resource constraints. To address these issues, we present SenSpire OS, a predictable,flexible, and efficient operating system for wireless sensor networks. We improve system predictability by two-phase interrupt servicingand predictable thread synchronization; we achieve system flexibility by providing a hybrid model for both event-driven programmingand multithreaded programming; we retain system efficiency by employing stack sharing and modular design. Moreover, we havedesigned a three-layer networking stack and an object-oriented programming language (CSpire) to enhance system usability andprogramming convenience. Having implemented SenSpire OS on three most commonly used sensor node platforms, we evaluate itsperformance extensively. Results show that SenSpire OS ensures predictable system performance, provides a flexible hybrid modelfor application programming, and is efficient in resource utilization.</p>
+    	  	<p>The development of a modern sensor network is difficult because of the long-term unattended operation mode, diverseapplication requirements, and stringent resource constraints. To address these issues, we present SenSpire OS, a predictable,flexible, and efficient operating system for wireless sensor networks. We improve system predictability by two-phase interrupt servicing and predictable thread synchronization; we achieve system flexibility by providing a hybrid model for both event-driven programming and multithreaded programming; we retain system efficiency by employing stack sharing and modular design. Moreover, we have designed a three-layer networking stack and an object-oriented programming language (CSpire) to enhance system usability and programming convenience. Having implemented SenSpire OS on three most commonly used sensor node platforms, we evaluate its performance extensively. Results show that SenSpire OS ensures predictable system performance, provides a flexible hybrid modelfor application programming, and is efficient in resource utilization.</p>
     </div></div></div> <!-- paperdetail -->
         
     <div class="paperdetail"> <a href="pub/tc11-spos.pdf"><img src="newimg/newpdf.png" width="16" height="16" /></a> <a href="xx.pdf"></a> &nbsp;
@@ -609,7 +634,7 @@ respectively, compared with the best state-of-the-art algorithms.</p>
     <!-- the following two divs are necessary -->
     <div class="required-fields group-schedule-accordion field-group-html-element">
     <div class="field field-name-field-paper-description-long field-type-text-long field-label-hidden">
-    	  	<p>We present a new mechanism called Elon for enabling efficient and long-term reprogramming in wirelesssensor networks. Elon reduces the transferred code size significantly by introducing the concept ofreplaceablecomponent. It avoids the cost of hardware reboot with a novel software reboot mechanism. Moreover, itsignificantly prolongs the reprogrammable lifetime (i.e., the time period during which the sensor nodes canbe reprogrammed) by avoiding flash writes for TelosB nodes. Experimental results show that Elon transfersup to 120–389 times less information than Deluge, and 18–42 times less information than Stream. Thesoftware reboot mechanism that Elon applies reduces the rebooting cost by 50.4%–53.87% in terms of beaconpackets, and 56.83% in terms of unsynchronized nodes. In addition, Elon prolongs the reprogrammable lifetime by a factor of 3.3.</p>
+    	  	<p>We present a new mechanism called Elon for enabling efficient and long-term reprogramming in wireless sensor networks. Elon reduces the transferred code size significantly by introducing the concept of replaceable component. It avoids the cost of hardware reboot with a novel software reboot mechanism. Moreover, itsignificantly prolongs the reprogrammable lifetime (i.e., the time period during which the sensor nodes canbe reprogrammed) by avoiding flash writes for TelosB nodes. Experimental results show that Elon transfersup to 120–389 times less information than Deluge, and 18–42 times less information than Stream. The software reboot mechanism that Elon applies reduces the rebooting cost by 50.4%–53.87% in terms of beaconpackets, and 56.83% in terms of unsynchronized nodes. In addition, Elon prolongs the reprogrammable lifetime by a factor of 3.3.</p>
     </div></div></div> <!-- paperdetail -->
         
     <div class="paperdetail"> <a href="pub/TECS-Elon.pdf"><img src="newimg/newpdf.png" width="16" height="16" /></a> <a href="xx.pdf"></a> &nbsp;
@@ -653,12 +678,13 @@ Wireless Protocols, NSFC Grant No. 62072396, 2021.01~2024.12.</li>
   <h1><a name="award"></a>Awards</h1>
   
   <ul>
+    <li>The National Youth Talent Support Program</li>
     <li>CCF Distinguished Awards for Science and Technology Progress, 2021.</li>
     <li>Second Class in  Self-made Equipment of National Universities, 2021. </li>
     <li>Outstanding Achievement Award, Zhejiang Computer Federation, 2020. </li>
     <li>Outstanding Service Award, Zhejiang Computer Federation, 2019. </li>
     <li>Zhejiang NSF Distinguished Young
-    Scholar, 2019.</li>
+    Scholar</li>
     <li>CCF-Tencent Riho-Bird  Excellent Patent Award, 2017.</li>
     <li>Best Video Award, ACM MobiCom 2017. </li>
     <li>Zhejiang Provincial 151 Talent Project, 2017. </li>
@@ -666,7 +692,7 @@ Wireless Protocols, NSFC Grant No. 62072396, 2021.01~2024.12.</li>
     <li>Best Paper Award, 12th IEEE Int'l Conf. on Mobile Ad-hoc and Sensor Networks (MSN), 2016.</li>
     <li>Second Prize of National IoT Competition &amp; AWS Cloud Innovation Award, 2016.</li>
     <li>CCF-Tencent Riho-Bird  Research Award Funds, 2016.</li>
-    <li>CCF-Intel Young Faculty Researcher Program, 2015. </li>
+    <li>CCF-Intel Young Faculty Researcher Program </li>
     <li>First Class Science and Technology Progress Awards by Zhejiang Province, 2014.</li>
     <li>
       Nominee for the National Excellent  Doctorial Dissertation Award, China Ministry of Education, 2013.</li>
@@ -675,6 +701,7 @@ Wireless Protocols, NSFC Grant No. 62072396, 2021.01~2024.12.</li>
   </ul>
   <h1><a name="talk"></a>Invited Talks</h1>
     <ul>
+      <li>&quot;Cloud-Edge Integrated Computing for AIoT&quot; (面向AIoT的云边融合计算), AI Conference of Jiangsu Province, Wuxi, Aug. 26, 2022. </li>
       <li>“Low Code Development for IoT” (物联网低代码开发), ACM SIGBED China Forum, ACM TURC, Hefei, July 30, 2021. </li>
       <li>“Low Code Development for IoT” (物联网低代码开发), Computer Architecture Forum, Computer Conference of Jiangsu Province, Xuzhou, June 27, 2021. </li>
       <li>&quot;Taming the Challenges in the IoT 2.0 era&quot; (物联网2.0时代的挑战和机遇), Nanjing University, Dec. 8, 2019. </li>
