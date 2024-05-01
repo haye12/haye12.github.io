@@ -118,6 +118,7 @@
   <li>We have won the <em><a href="https://mp.weixin.qq.com/s/wplOB_GgSPz-NRJ9aY1DXQ">CCF Distinguished Awards for Science and Technology Progress</a></em>.</li>
   <li ><b><a href="http://www.emnets.org/iotbook/">《从创意到原型：物联网应用快速开发》</a></b>, 科学出版社. (<a href="https://item.jd.com/12638682.html">京东链接</a>、<a href="http://product.dangdang.com/27891507.html">当当链接</a>)</li>
   <li><span class="bf"><a href="https://dl.ccf.org.cn/article/articleDetail.html?type=xhtx_thesis&_ack=1&id=6002180057073664"><strong>《物联网软件低代码开发》</strong></a>，中国计算机学会通讯</span> (CCCF), 2022年6月. </li>
+  <li>[2024.05] One paper is accepted to <a href="https://www.usenix.org/conference/atc24"><strong>USENIX ATC 2024</strong></a>. </li>
   <li>[2024.01] One paper is accepted to <strong><a href="https://www2024.thewebconf.org/">The ACM Web Conference 2024</a></strong>. </li>
   <li>[2024.01] One paper is accepted to <strong><a href="https://ipsn.acm.org/2024/">IEEE/ACM IPSN 2024</a></strong>.</li>
   <li>[2024.01] One paper is accepted to <strong><a href="https://www.ubicomp.org/ubicomp-iswc-2024/">IMWUT/UbiComp 2024</a></strong>. </li>
@@ -234,6 +235,165 @@ with more than 150 IoT devices.
   
 
   <ul>
+  
+  <li><em>[IPSN'24]</em> dTEE: A Declarative Approach to Secure IoT Applications Using TrustZone
+
+    	
+      <article id="node-246493" class="node node-paper view-mode-schedule"><div class="required-fields group-text-wrapper field-group-html-element"><div class="flexwrapper"><div class="paperdetail">
+    <!-- the following two divs are necessary -->
+    <div class="required-fields group-schedule-accordion field-group-html-element">
+    <div class="field field-name-field-paper-description-long field-type-text-long field-label-hidden">
+    	      	
+    	  	    <p>Internet of Things (IoT) applications have recently been widely
+used in safety-critical scenarios. To prevent sensitive information
+leaks, IoT device vendors provide hardware-assisted protections,
+called Trusted Execution Environments (TEEs), like ARM Trust-
+Zone. Programming a TEE-based application requires separate code
+for two components, significantly slowing down the development
+process. Existing solutions tackle this issue by automatic code partition
+while not successfully applying it in two complicated scenarios:
+adding trusted logic and interactions with secure peripherals.
+We propose dTEE, a declarative approach to secure IoT applications
+based on TrustZone. dTEE proposes a rapid approach that enables
+developers to declare tiered-sensitive variables and functions
+of existing applications. Besides, dTEE automatically transforms
+device drivers into trusted ones. We evaluate dTEE on four realworld
+IoT applications and seven micro-benchmarks. Results show
+that dTEE achieves high expressiveness for supporting 50% more
+applications than existing approaches and reduces 90% of the lines
+of code against handcrafted development.</p>
+            
+            
+    </div></div></div> <!-- paperdetail -->
+        
+    <div class="paperdetail">
+      <img src="newimg/newpdf.png" width="16" height="16" /> <a href="xx.pdf"></a> &nbsp;
+     	<img src="newimg/slides.png" width="16" height="16" /> <a href="xx.pdf"></a> 
+    </div>            	         
+
+    </div> <!-- end flexwrapper -->
+  </div></article>
+    </li>
+    
+    <li><em>[WWW'24]</em> Unlocking the Non-deterministic Computing Power with Memory-Elastic Multi-Exit Neural Networks
+
+    	
+      <article id="node-246493" class="node node-paper view-mode-schedule"><div class="required-fields group-text-wrapper field-group-html-element"><div class="flexwrapper"><div class="paperdetail">
+    <!-- the following two divs are necessary -->
+    <div class="required-fields group-schedule-accordion field-group-html-element">
+    <div class="field field-name-field-paper-description-long field-type-text-long field-label-hidden">
+    	      	
+    	  	    <p>With the increasing demand for Web of Things (WoT) and edge computing, the efficient utilization of limited computing power on edge devices is becoming a crucial challenge.
+Traditional neural networks (NNs) as web services rely on deterministic computational resources. 
+However, they may fail to output the results on non-deterministic computing power which could be preempted at any time, degrading the task performance significantly.
+Multi-exit NNs with multiple branches have been proposed as a solution, but the accuracy of intermediate results may be unsatisfactory. 
+In this paper, we propose MEEdge, a system that automatically transforms classic single-exit models into heterogeneous and dynamic multi-exit models which enables Memory-Elastic inference at the Edge with non-deterministic computing power.
+To build heterogeneous multi-exit models, MEEdge uses efficient convolutions to form a branch zoo and High Priority First (HPF)-based branch placement method for branch growth.
+To adapt models to dynamically varying computational resources, we employ a novel on-device scheduler for collaboration.
+Further, to reduce the memory overhead caused by dynamic branches, we propose neuron-level weight sharing and few-shot knowledge distillation (KD) retraining.
+Our experimental results show that models generated by MEEdge can achieve up to 27.31% better performance than existing multi-exit NNs.</p>
+            
+            
+    </div></div></div> <!-- paperdetail -->
+        
+    <div class="paperdetail">
+      <img src="newimg/newpdf.png" width="16" height="16" /> <a href="xx.pdf"></a> &nbsp;
+     	<img src="newimg/slides.png" width="16" height="16" /> <a href="xx.pdf"></a> 
+    </div>            	         
+
+    </div> <!-- end flexwrapper -->
+  </div></article>
+    </li>
+    
+  <li><em>[INFOCOM'24]</em> Exploiting Multiple Similarity Spaces for Efficient and Flexible Incremental Update of Mobile Applications
+
+    	
+      <article id="node-246493" class="node node-paper view-mode-schedule"><div class="required-fields group-text-wrapper field-group-html-element"><div class="flexwrapper"><div class="paperdetail">
+    <!-- the following two divs are necessary -->
+    <div class="required-fields group-schedule-accordion field-group-html-element">
+    <div class="field field-name-field-paper-description-long field-type-text-long field-label-hidden">
+    	      	
+    	  	    <p>Mobile application updates occur frequently, and
+they continue to add considerable traffic over the Internet.
+Differencing algorithms, which compute a small delta between
+the new version and the old version, are often employed to reduce
+the update overhead. Transforming the old and new files into the
+decoded similarity spaces can drastically reduce the delta size.
+However, this transformation is often hindered by two practical
+reasons: (1) insufficient decoding (2) long recompression time. To
+address this challenge, we have proposed two general approaches
+to transforming the compressed files (more specifically, deflate
+stream) into the full decoded similarity space and partially
+decoded similarity space, with low recompression time. The first
+approach uses recompression-aware searching mechanism, based
+on a general full decoding tool to transform deflate stream to
+the full decoded similarity space with a configurable searching
+complexity, even when it cannot be recompressed identically.
+The second approach uses a novel solution to transform a
+deflate stream into the partial decoded similarity space with
+differencing-friendly LZ77 token reencoding. We have also proposed
+an algorithm called MDiffPatch to exploit the full and
+partial decoded similarity spaces. The algorithm can well balance
+compression ratio and recompression time by exposing a tunable
+parameter. Extensive evaluation results show that MDiffPatch
+achieves lower compression ratio than state-of-the-art algorithms
+and its tunable parameter allows us to achieve a good tradeoff
+between compression ratio and recompression time.</p>
+            
+            
+    </div></div></div> <!-- paperdetail -->
+        
+    <div class="paperdetail">
+      <img src="newimg/newpdf.png" width="16" height="16" /> <a href="xx.pdf"></a> &nbsp;
+     	<img src="newimg/slides.png" width="16" height="16" /> <a href="xx.pdf"></a> 
+    </div>            	         
+
+    </div> <!-- end flexwrapper -->
+  </div></article>
+    </li>
+  
+  <li><em>[INFOCOM'24]</em> BLE Location Tracking Attacks by Exploiting Frequency Synthesizer Imperfection
+
+    	
+      <article id="node-246493" class="node node-paper view-mode-schedule"><div class="required-fields group-text-wrapper field-group-html-element"><div class="flexwrapper"><div class="paperdetail">
+    <!-- the following two divs are necessary -->
+    <div class="required-fields group-schedule-accordion field-group-html-element">
+    <div class="field field-name-field-paper-description-long field-type-text-long field-label-hidden">
+    	      	
+    	  	    <p>In recent years, Bluetooth Low Energy (BLE) has
+become one of the most wildly used wireless protocols and it
+is common that users carry one or more BLE devices. With
+the extensive deployment of BLE devices, there is a significant
+privacy risk if these BLE devices can be tracked. However,
+the common wisdom suggests that the risk of BLE location
+tracking is negligible. The reason is that researchers believe there
+are no stable BLE fingerprints that are stable across different
+scenarios (e.g., temperatures) for different BLE devices with the
+same model. In this paper, we introduce a novel physical-layer
+fingerprint named Transient Dynamic Fingerprint (TDF), which
+originated from the negative feedback control process of the
+frequency synthesizer. Because of the hardware imperfection,
+the dynamic features of the frequency synthesizer are different,
+making TDF unique among different devices, even with the same
+model. Furthermore, TDF keeps stable under different thermal
+conditions. Based on TDF, we propose BTrack, a practical BLE
+device tracking system and evaluate its tracking performance in
+different environments. The results show BTrack works well once
+BLE beacons are effectively received. The identification accuracy
+is 35.38%-57.41% higher than the existing method, and stable
+over temperatures, distances, and locations.</p>
+            
+            
+    </div></div></div> <!-- paperdetail -->
+        
+    <div class="paperdetail">
+      <img src="newimg/newpdf.png" width="16" height="16" /> <a href="xx.pdf"></a> &nbsp;
+     	<img src="newimg/slides.png" width="16" height="16" /> <a href="xx.pdf"></a> 
+    </div>            	         
+
+    </div> <!-- end flexwrapper -->
+  </div></article>
+    </li>
   
   <li><em>[NSDI'23]</em> LinkLab 2.0: a Multi-tenant Programmable IoT Testbed for Experimentation with Edge-Cloud Integration
     	
