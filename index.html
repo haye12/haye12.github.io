@@ -114,6 +114,7 @@
   <li>We have won the <em><a href="https://mp.weixin.qq.com/s/wplOB_GgSPz-NRJ9aY1DXQ">CCF Distinguished Awards for Science and Technology Progress</a></em>.</li>
   <li ><b><a href="http://www.emnets.org/iotbook/">《从创意到原型：物联网应用快速开发》</a></b>, 科学出版社. (<a href="https://item.jd.com/12638682.html">京东链接</a>、<a href="http://product.dangdang.com/27891507.html">当当链接</a>)</li>
   <li><span class="bf"><a href="https://dl.ccf.org.cn/article/articleDetail.html?type=xhtx_thesis&_ack=1&id=6002180057073664"><strong>《物联网软件低代码开发》</strong></a>，中国计算机学会通讯</span> (CCCF), 2022年6月. </li>
+  <li>[2024.07] Two papers are accepted to <span class="field-name-field-presentation-session-date"><em>IEEE Transactions on Mobile Computing</em></span>. </li>
   <li>[2024.07] Our paper ChatIoT is accepted to <strong>IMWUT/UbiComp</strong>. </li>
   <li>[2024.05] One paper is accepted to <a href="https://www.usenix.org/conference/atc24"><strong>USENIX ATC 2024</strong></a>. </li>
   <li>[2024.01] One paper is accepted to <strong><a href="https://www2024.thewebconf.org/">The ACM Web Conference 2024</a></strong>. </li>
@@ -156,7 +157,7 @@
       	<strong>Confidential sensing computation for IoT</strong>: 
         
         Confidential sensing computation, which applies confidential computing to the process of sensing, computation, and inference of IoT data, is an important technique to ensure the secure use of data and code on IoT devices. We conduct various researches on this topic, including programming methods for TEE-enabled IoT devices, lightweight isolation methods like WebAssembly, and AI inference with data privacy protection and model privacy protection, etc. 
-      We have proposed some novel methods and techniques include  dTEE [<em>IPSN'24</em>], FDAS [<em>IMWUT/UbiComp'24</em>], SimEnc [<em>ATC'24</em>], WAIT [<em>MobiSys'22</em>], and etc. </td>
+      We have proposed some novel methods and techniques include  dTEE [<em>IPSN'24</em>], FDAS [<em>IMWUT/UbiComp'24</em>], WAIT [<em>MobiSys'22</em>], and etc. </td>
     </tr>
     
     <tr>
@@ -207,7 +208,29 @@
 
   <ul>
   
-  <li><em>[IPSN'24]</em> dTEE: A Declarative Approach to Secure IoT Applications Using TrustZone
+  <li><em>[ATC'24]</em> SimEnc: A High-Performance Similarity-Preserving Encryption Approach for Deduplication of Encrypted Docker Images
+
+    	
+      <article id="node-246493" class="node node-paper view-mode-schedule"><div class="required-fields group-text-wrapper field-group-html-element"><div class="flexwrapper"><div class="paperdetail">
+    <!-- the following two divs are necessary -->
+    <div class="required-fields group-schedule-accordion field-group-html-element">
+    <div class="field field-name-field-paper-description-long field-type-text-long field-label-hidden">
+    	      	
+    	  	    <p>Encrypted Docker images are becoming increasingly popular in Docker registries for privacy. As the Docker registry is tasked with managing an increasing number of images, it becomes essential to implement deduplication to conserve storage space. However, deduplication for encrypted images is difficult because deduplication exploits identical content, while encryption tries to make all contents look random. Existing state-of-the-art works try to decompress images and perform message-locked encryption (MLE) to deduplicate encrypted images. Unfortunately, our measurements uncover two limitations in current works: (i) even minor modifications to the image content can hinder MLE deduplication, (ii) decompressing image layers would increase the size of the storage for duplicate data, and significantly compromise user pull latency and deduplication throughput. In this paper, we propose SimEnc, a high-performance similarity-preserving encryption approach for deduplication of encrypted Docker images. SimEnc is the first work that integrates the semantic hash technique into MLE to extract semantic information among layers for improving the deduplication ratio. SimEnc builds on a fast similarity space selection mechanism for flexibility. Unlike existing works completely decompressing the layer, we explore a new similarity space by Huffman decoding that achieves a better deduplication ratio and performance. Experiments show that SimEnc outperforms both the state-of-the-art encrypted serverless platform and plaintext Docker registry, reducing storage consumption by up to 261.7% and 54.2%, respectively. Meanwhile, SimEnc can surpass them in terms of pull latency.</p>
+            
+            
+    </div></div></div> <!-- paperdetail -->
+        
+    <div class="paperdetail">
+      <img src="newimg/newpdf.png" width="16" height="16" /> <a href="xx.pdf"></a> &nbsp;
+     	<img src="newimg/slides.png" width="16" height="16" /> <a href="xx.pdf"></a> 
+    </div>            	         
+
+    </div> <!-- end flexwrapper -->
+  </div></article>
+    </li>
+    
+    <li><em>[IPSN'24]</em> dTEE: A Declarative Approach to Secure IoT Applications Using TrustZone
 
     	
       <article id="node-246493" class="node node-paper view-mode-schedule"><div class="required-fields group-text-wrapper field-group-html-element"><div class="flexwrapper"><div class="paperdetail">
