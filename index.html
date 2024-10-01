@@ -167,7 +167,7 @@
     <tr>
       <td class="tablePicture">
         <img class="pubimg" src="newimg/limbmotion.gif"></td>
-      <td class="tableDescription"><strong>AI-empowered IoT: </strong> The rapid growth of AI technologies, e.g., large language models, will have a great impact of IoT. We are especially interested in how to embed intelligence into a vast number of IoT devices. We study how to tailor complex AI models for resource-contrained IoT and edge devices, how to use AI for intelligent sensing, how to use AI to facilitate IoT programming, and how to use AI to empower various IoT applications such as video surveilance, smart home, and mobile computing. We have proposed some novel techniques and systems include AirText [<em>TMC'23</em>], EINet [<em>ICDCS'23</em>], MEEdge [<em>WWW'24</em>]. </td>
+      <td class="tableDescription"><strong>AI-empowered IoT: </strong> The rapid growth of AI technologies, e.g., large language models, will have a great impact of IoT. We are especially interested in how to embed intelligence into a vast number of IoT devices. We study how to tailor complex AI models for resource-contrained IoT and edge devices, how to use AI for intelligent sensing, how to use AI to facilitate IoT programming, and how to use AI to empower various IoT applications such as video surveilance, smart home, and mobile computing. We have proposed some novel techniques and systems include AirText [<em>TMC'23</em>], EINet [<em>ICDCS'23</em>], MEEdge [<em>WWW'24</em>], ChatIoT [<em>IMWUT/UbiComp'24</em>]</td>
     </tr>
     
     <tr>
@@ -175,7 +175,7 @@
       
       <td class="tableDescription">
       	<strong>Low-power wireless</strong>: Recent years have witnessed many low-power wireless technologies, e.g., ZigBee, Bluetooth, LoRa, etc. These  heterogeneous technologies 
-      raised several important research issues, such as how to combat against cross-technology interference, how to perform cross-technology communication without a gateway, how to interoperate over a wide range of IoT protocols. In this study, we aim to address several key issues in this field. We have proposed some novel techniques and systems include TinyNet [<em>MobiSys'22</em>], LoFi [<em>INFOCOM'21</em>], RT-BLE [<em>INFOCOM'23</em>], BTrack [<em>INFOCOM'24</em>], and etc. </td>
+      raised several important research issues, such as how to combat against cross-technology interference, how to perform cross-technology communication without a gateway, how to interoperate over a wide range of IoT protocols. In this study, we aim to address several key issues in this field. We have proposed some novel techniques and systems include TinyNet [<em>MobiSys'22</em>], LoFi [<em>INFOCOM'21</em>], RT-BLE [<em>INFOCOM'23</em>], BTrack [<em>INFOCOM'24</em>], BLEW [<em>SenSys'24</em>] and etc. </td>
     </tr>
     
     <tr>
@@ -184,7 +184,7 @@
         </video> -->
       	<iframe width=200px src='http://player.youku.com/embed/XMzAyNjQ4NDc2NA==' frameborder=0 'allowfullscreen'></iframe></td>
       <td class="tableDescription">
-      	<strong>Low-code IoT programming</strong>: Low-code IoT programming is very important for simplify complex IoT development process. We conduct researches on various issues on this topic, including how to adapt to various IoT hardwares, how to facilitate device-edge-cloud integrated programming, and how to embrace LLM for IoT development. Some novel systems include TinyLink [<em>MobiCom'17</em>, <em>MobiCom'20</em>],  LinkLab [<em>IoTDI'19</em>, <em>NSDI'23</em>], EdgeProg [<em>ICDCS'21</em>, <em>TC'22</em>], WiProg [<em>INFOCOM'21</em>], ChatIoT [<em>APNet'23</em>]. </td>
+      	<strong>Low-code IoT programming</strong>: Low-code IoT programming is very important for simplify complex IoT development process. We conduct researches on various issues on this topic, including how to adapt to various IoT hardwares, how to facilitate device-edge-cloud integrated programming, and how to embrace LLM for IoT development. Some novel systems include TinyLink [<em>MobiCom'17</em>, <em>MobiCom'20</em>],  LinkLab [<em>IoTDI'19</em>, <em>NSDI'23</em>], EdgeProg [<em>ICDCS'21</em>, <em>TC'22</em>], WiProg [<em>INFOCOM'21</em>]. </td>
     </tr>
     
     
@@ -212,7 +212,53 @@
 
   <ul>
   
-  <li><em>[IMWUT/UbiComp'24]</em> ChatIoT: Zero-code Generation of Trigger-action Based IoT Programs
+  <li><em>[SenSys'24]</em> Combating BLEWeak Links with Adaptive Symbol Extension and 
+    DNN-based Demodulation
+      <article id="node-246493" class="node node-paper view-mode-schedule"><div class="required-fields group-text-wrapper field-group-html-element"><div class="flexwrapper"><div class="paperdetail">
+    <!-- the following two divs are necessary -->
+    <div class="required-fields group-schedule-accordion field-group-html-element">
+    <div class="field field-name-field-paper-description-long field-type-text-long field-label-hidden">
+    	      	
+    	  	    <p>Bluetooth Low Energy (BLE) is one of the most popular wireless
+protocols for building IoT applications because of its low energy,
+low cost, and wide compatibility nature. However, BLE communication
+performance can be easily affected by blockages because of its
+low transmission power. This paper presents BLEW, a technique to
+improve the BLE communication performance over weak links by
+exploiting adaptive symbol extension to combat channel interference
+and maximize network throughput. This paper addresses two
+key challenges. First, we propose a phase peak clustering-based approach
+for accurate preamble detection. It exploits the phase difference
+between sample points and coherently adds up the phase difference
+over the whole preamble to form a cluster with prominent
+phase peaks. After that, we propose a multi-domain DNN-based
+demodulator to enhance the symbol demodulation performance
+with low Signal-to-Noise Ratio (SNR). It fully extracts the temporal
+and spectrum features of the signal and effectively decodes BLE
+symbols. Furthermore, we model the BLE throughput considering
+the physical layer details of Commercial Off-The-Shelf (COTS) BLE
+chips, which can be used to choose the optimal symbol length
+according to the channel conditions. We implement BLEW with
+USRP B210 and COTS Nordic nRF52840 platform. The experiment
+shows BLEW can increase throughput up to 149.78 Kb/s compared
+with the native BLE. The phase peak clustering-based preamble
+detection method has an 8.27%-19.15% higher preamble detection
+rate and the DNN-based demodulator can bring up to 3.36 dB gain
+compared with existing methods.</p>
+            
+            
+    </div></div></div> <!-- paperdetail -->
+        
+    <div class="paperdetail">
+      <img src="newimg/newpdf.png" width="16" height="16" /> <a href="xx.pdf"></a> &nbsp;
+     	<img src="newimg/slides.png" width="16" height="16" /> <a href="xx.pdf"></a> 
+    </div>            	         
+
+    </div> <!-- end flexwrapper -->
+</div></article>
+    </li>
+    
+    <li><em>[IMWUT/UbiComp'24]</em> ChatIoT: Zero-code Generation of Trigger-action Based IoT Programs
     <article id="node-246493" class="node node-paper view-mode-schedule"><div class="required-fields group-text-wrapper field-group-html-element"><div class="flexwrapper"><div class="paperdetail">
     <!-- the following two divs are necessary -->
     <div class="required-fields group-schedule-accordion field-group-html-element">
