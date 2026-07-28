@@ -213,7 +213,71 @@
   <ul>
   
   
-  <li><em>[CCS'25]</em> TensorShield: Safeguarding On-Device Inference by Shielding Critical DNN Tensors with TEE<br>
+  <li><em>[Security'26]</em> Securing Retrieval-Augmented Code Generation via Contextual Knowledge Injection: A Case for Embedded IoT Applications<br>
+<article id="node-246493" class="node node-paper view-mode-schedule"><div class="required-fields group-text-wrapper field-group-html-element"><div class="flexwrapper"><div class="paperdetail">
+    <!-- the following two divs are necessary -->
+    <div class="required-fields group-schedule-accordion field-group-html-element">
+    <div class="field field-name-field-paper-description-long field-type-text-long field-label-hidden">
+    	      	
+    	  	    <p>Repository-grounded retrieval-augmented code generation (RACG) is increasingly used in embedded IoT development by retrieving code and documentation from a pinned RTOS/SDK repository (e.g., Zephyr OS). In this setting, security risks are often version-inherited: even without retrieval poisoning, generated applications may invoke benign-looking public APIs that transitively reach vulnerable internal routines in the pinned snapshot, thereby inheriting known CVEs. Existing secure RACG pipelines largely focus on task-level intent and generic vulnerability patterns, which can miss repository- and version-specific exposure. Meanwhile, conventional CVE scanners can flag vulnerable locations but cannot determine whether those vulnerabilities are reachable through the public APIs that the generator commits to during repository-grounded generation. In this paper, we present IoTRAGuarder, a contextual knowledge injection framework that aligns security hardening with generation-time API selection under repository grounding. IoTRAGuarder (i) recovers auditable reverse call chains from CVE-localized internals to exposing public APIs via static analysis plus an evidence-gated LLM to bridge indirections and macro-driven "call-graph islands", (ii) constructs a version-aware security knowledge base that binds affected version intervals to exposed public APIs with prompt-ready constraints, safer alternatives, or avoidance/upgrade guidance, and (iii) performs dual-layer, API-aligned online retrieval to inject concise, version-matched constraints into the final prompt. We evaluate IoTRAGuarder on 44 real-world Zephyr tasks across four LLMs. Compared to the prior state-of-the-art secure RACG baseline, IoTRAGuarder improves the overall security success rate from 5.11% to 78.41%.</p>
+</div></div></div> <!-- paperdetail -->
+        
+    <div class="paperdetail">
+      <img src="newimg/newpdf.png" width="16" height="16" /> <a href="xx.pdf"></a> &nbsp;
+     	<img src="newimg/slides.png" width="16" height="16" /> <a href="xx.pdf"></a> 
+    </div>            	         
+
+    </div> <!-- end flexwrapper -->
+</div></article>
+    </li>
+    
+    <li><em>[ICML'26]</em> RTInfer: Real-Time Inference of Multiple DNNs on Edge GPUs<br>
+<article id="node-246493" class="node node-paper view-mode-schedule"><div class="required-fields group-text-wrapper field-group-html-element"><div class="flexwrapper"><div class="paperdetail">
+    <!-- the following two divs are necessary -->
+    <div class="required-fields group-schedule-accordion field-group-html-element">
+    <div class="field field-name-field-paper-description-long field-type-text-long field-label-hidden">
+    	      	
+    	  	    <div>
+    	  	      <div>
+    	  	        <div id="abstractText">
+    	  	          <div>
+    	  	            <p>While edge GPUs are increasingly used for latency-critical DNN tasks, limited resources often fail to meet strict real-time (RT) requirements under concurrent workloads. Existing preemption and early-exit mechanisms often underutilize GPU resources through single-task queuing and sacrifice excessive accuracy during task bursts. To address this, we propose RTInfer, a novel system that enables concurrent RT task execution while balancing throughput and accuracy. RTInfer integrates an accuracy-calibrated lightweight variant co-optimization to generate efficient models, a memory-layout-aware scheduler to mitigate fragmentation during preemption, and an on-demand loading strategy to minimize host-to-GPU latency. Extensive evaluations demonstrate that RTInfer outperforms state-of-the-art methods by reducing average deadline miss rate (DMR) from 32.8% to 0% and improving accuracy by up to 56.5%.</p>
+  	  	            </div>
+  	  	          </div>
+  	  	        </div>
+  	  	      </div>
+    	  	    <div></div>
+    </div></div></div> <!-- paperdetail -->
+        
+    <div class="paperdetail">
+      <img src="newimg/newpdf.png" width="16" height="16" /> <a href="xx.pdf"></a> &nbsp;
+     	<img src="newimg/slides.png" width="16" height="16" /> <a href="xx.pdf"></a> 
+    </div>            	         
+
+    </div> <!-- end flexwrapper -->
+</div></article>
+    </li>
+  
+  <li><em>[IMWUT/UbiComp'25]</em> One Model to Fit Them All: Universal IMU-based Human Activity Recognition with LLM-assisted Cross-dataset Representation<br>
+<article id="node-246493" class="node node-paper view-mode-schedule"><div class="required-fields group-text-wrapper field-group-html-element"><div class="flexwrapper"><div class="paperdetail">
+    <!-- the following two divs are necessary -->
+    <div class="required-fields group-schedule-accordion field-group-html-element">
+    <div class="field field-name-field-paper-description-long field-type-text-long field-label-hidden">
+    	      	
+    	  	    <p>Human Activity Recognition (HAR) is essential for pervasive computing and intelligent interaction, with broad applications across various fields. However, there is still no one model capable of fitting various HAR datasets, severely limiting its applicability in practical scenarios. To address this, we propose oneHAR, an LLM-assisted universal IMU-based HAR system designed to achieve "one model to fit them all" -- just one model that can adapt to diverse HAR datasets without any dataset-specific operation. In particular, we propose Cross-Dataset neural network (CDNet) for the "one model," which models both the temporal context and spatial relationships of IMU data to capture cross-dataset representations, encompassing differences in device, participant, data collection position, and environment, etc. Additionally, we introduce LLM-driven data synthesis, which enhances the training process by generating virtual IMU data through three carefully designed strategies. Furthermore, LLM-assisted adaptive position processing optimizes the inference process by flexibly handling a variable combination of positional inputs. Our model demonstrates strong generalization across five public IMU-based HAR datasets, outperforming the best baselines by up to 46.9% in the unseen-dataset scenario, and 6.5% in the cross-dataset scenario.
+</p>
+</div></div></div> <!-- paperdetail -->
+        
+    <div class="paperdetail">
+      <img src="newimg/newpdf.png" width="16" height="16" /> <a href="xx.pdf"></a> &nbsp;
+     	<img src="newimg/slides.png" width="16" height="16" /> <a href="xx.pdf"></a> 
+    </div>            	         
+
+    </div> <!-- end flexwrapper -->
+</div></article>
+    </li>
+    
+    <li><em>[CCS'25]</em> TensorShield: Safeguarding On-Device Inference by Shielding Critical DNN Tensors with TEE<br>
 <article id="node-246493" class="node node-paper view-mode-schedule"><div class="required-fields group-text-wrapper field-group-html-element"><div class="flexwrapper"><div class="paperdetail">
     <!-- the following two divs are necessary -->
     <div class="required-fields group-schedule-accordion field-group-html-element">
